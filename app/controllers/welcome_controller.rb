@@ -1,6 +1,8 @@
 class WelcomeController < ApplicationController
   def hello
-    @variable = 'como estas?'
+    pet = Pet.first
+    @name = pet.name
+    @breed = pet.breed
   end
 end
 # https://repl.it/@pavelsumano/myapp
